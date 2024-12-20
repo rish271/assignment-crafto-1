@@ -1,0 +1,24 @@
+.quote-card {
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .quote-image {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .quote-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+  }
+  
