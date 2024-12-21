@@ -32,7 +32,7 @@ const QuoteList = () => {
 
   const titleStyle = {
     textAlign: "center",
-    marginBottom: "20px",
+    marginTop: "45px",
     color: "#333",
   };
 

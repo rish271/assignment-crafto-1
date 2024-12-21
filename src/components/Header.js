@@ -40,6 +40,8 @@ const headerStyles = {
   padding: "10px 20px",
   background: "#333",
   color: "#fff",
+  position: "fixed",
+  width: '100%'
 };
 
 const buttonStyles = {
