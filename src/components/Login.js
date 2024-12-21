@@ -15,7 +15,6 @@ const Login = () => {
       if (data.token) {
         setAuthToken(data.token);
         navigate("/create-quote");
-        alert("Login successful!");
       }
     } catch (error) {
       console.log(error, "error");
