@@ -14,15 +14,20 @@ import {AuthProvider, useAuth} from './components/AuthContext'
 import Login from './components/Login'
 import QuoteList from './components/QuoteList'
 import QuoteCreation from './components/QuoteCreation'
+import Header from './components/Header'
 
 const ProtectedRoute = ({children}) => {
   const {authToken} = useAuth()
   return authToken ? children : <Navigate to="/" />
 }
 
-const App = () => (
+
+const App = () => {
+
+  return(
   <AuthProvider>
     <Router>
+    <Header/>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route
@@ -44,6 +49,8 @@ const App = () => (
       </Routes>
     </Router>
   </AuthProvider>
-)
+  )
+}
+
 
 export default App
